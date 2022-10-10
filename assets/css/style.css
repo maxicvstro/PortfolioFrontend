@@ -1,12 +1,106 @@
 body {
-    background-color: antiquewhite;
+    margin: 0;
+    font-family: 'Open sans', Arial;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    margin-top: 75px;
 }
 
-.bg-lightblue{
-    background-color: #dfd9d9;
+ul li{
+    text-decoration: none;
+}
+
+.bg-lightblue{ 
+   background-color: #1d1d1d;
 }
 
 .list-group-item{
     background-color: transparent;
     border: none;
+}
+
+.fa-brands.fa-github.fa-xl{
+    color: #ffffff;
+}
+
+.fa-brands.fa-github.fa-xl:hover{
+    --bs-text-opacity: 1;
+    color: #6842ad !important;
+    cursor: pointer;
+    transition: all .2s ease-in-out 0s;
+    -webkit-transition: all .2s ease-in-out 0s;
+    -moz-transition: all .2s ease-in-out 0s;
+    -ms-transition: all .2s ease-in-out 0s;
+    -o-transition: all .2s ease-in-out 0s;
+}
+
+.fa-brands.fa-linkedin.fa-xl{
+    color: #ffffff;
+}
+
+.fa-solid.fa-user-lock{
+    color: #ffffff;
+}
+
+.fa-solid.fa-user-lock:hover {
+    color: #38a046;
+    transition: .2s;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.fa-brands.fa-linkedin.fa-xl:hover{
+    --bs-text-opacity: 1;
+    color: #3063d3 !important;
+    transition: .2s;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.fa-brands.fa-instagram.fa-xl{
+    color:#ffffff;
+}
+
+.fa-brands.fa-instagram.fa-xl:hover{
+    --bs-text-opacity: 1;
+    color: #da5186 !important;
+    transition: .2s;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.btn{
+    color: white;
+    --bs-text-opacity: 1;
+    background-color: #407c48 !important;
+}
+.btn:hover{
+    color: white;
+    background-color: #49a155 !important;
+}
+
+.banner {
+    background-image:linear-gradient(
+        rgba(0,0,0,.2),
+        rgba(0,0,0,1)
+    ), url('../images/image-2.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+h1.intro {
+    padding: 15%;
+    font-size: 2.5rem;
 }
