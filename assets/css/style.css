@@ -86,6 +86,11 @@ ul li{
     background-color: #49a155 !important;
 }
 
+.menu-responsive{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
 .banner {
     background-image:linear-gradient(
         rgba(0,0,0,.5),
@@ -119,6 +124,16 @@ h3.intro {
 
 @media (max-width: 650px){ 
 
+    .banner {
+        background-position: -9rem;
+        background-size:400%;
+        background-image:repeating-linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.9)
+        ), url('../images/image-2.jpg');
+    }
+
     h1.intro{
         font-size: 2.4rem;
     }
@@ -142,5 +157,6 @@ h3.intro {
         align-items: flex-start;
     }
 }
+
 
 /*---------------------------------*/
