@@ -158,5 +158,22 @@ h3.intro {
     }
 }
 
+@media (min-width:480px){
+    .menu-responsive{
+        display:none;
+    }
+}
 
-/*---------------------------------*/
+@media (max-width:480px){
+    .list-group.list-group-horizontal{
+        display: none;
+    }
+}
+
+/*-----------Media query-----------*/
+
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+}
