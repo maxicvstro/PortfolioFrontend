@@ -120,7 +120,7 @@ h3.intro {
 @media (max-width: 650px){ 
 
     h1.intro{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     h2.intro{
@@ -128,7 +128,7 @@ h3.intro {
     }
 
     h3.intro{
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
 
     .titulo-nombre{
