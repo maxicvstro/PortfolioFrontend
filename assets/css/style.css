@@ -1,18 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
+    background-color: #000000;
     margin: 0;
-    font-family: 'Open sans', Arial;
+    font-family: 'Montserrat', sans-serif;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-    margin-top: 75px;
 }
 
 ul li{
     text-decoration: none;
 }
 
-.bg-lightblue{ 
-   background-color: #1d1d1d;
+.navbar{
+   background-color: #00000000;
+   transition: all .5s ease;
+   -webkit-transition: all .5s ease;
+   -moz-transition: all .5s ease;
+   -ms-transition: all .5s ease;
+   -o-transition: all .5s ease;
+}
+
+.navbar.active{
+    background: #1d1d1d;
 }
 
 .list-group-item{
@@ -22,61 +35,45 @@ ul li{
 
 .fa-brands.fa-github.fa-xl{
     color: #ffffff;
+    transition: all .2s ease;
 }
 
 .fa-brands.fa-github.fa-xl:hover{
     --bs-text-opacity: 1;
-    color: #6842ad !important;
+    color: #9b7bd8 !important;
     cursor: pointer;
-    transition: all .2s ease-in-out 0s;
-    -webkit-transition: all .2s ease-in-out 0s;
-    -moz-transition: all .2s ease-in-out 0s;
-    -ms-transition: all .2s ease-in-out 0s;
-    -o-transition: all .2s ease-in-out 0s;
 }
 
 .fa-brands.fa-linkedin.fa-xl{
     color: #ffffff;
+    transition: all .2s ease;
 }
 
 .fa-solid.fa-user-lock{
     color: #ffffff;
+    transition: all .2s ease;
 }
 
 .fa-solid.fa-user-lock:hover {
     color: #38a046;
-    transition: .2s;
     cursor: pointer;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
 }
 
 .fa-brands.fa-linkedin.fa-xl:hover{
     --bs-text-opacity: 1;
-    color: #3063d3 !important;
-    transition: .2s;
+    color: #698ad1 !important;
     cursor: pointer;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
 }
 
 .fa-brands.fa-instagram.fa-xl{
     color:#ffffff;
+    transition: all .2s ease;
 }
 
 .fa-brands.fa-instagram.fa-xl:hover{
     --bs-text-opacity: 1;
     color: #da5186 !important;
-    transition: .2s;
     cursor: pointer;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
 }
 
 .btn{
@@ -91,8 +88,9 @@ ul li{
 
 .banner {
     background-image:linear-gradient(
-        rgba(0,0,0,.2),
-        rgba(0,0,0,1)
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.9)
     ), url('../images/image-2.jpg');
     height: 100vh;
     background-repeat: no-repeat;
@@ -100,7 +98,19 @@ ul li{
     
 }
 
+.titulo {
+    margin: 20rem 0rem 0 4rem;
+}
+
 h1.intro {
-    padding: 15%;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+h2.intro {
+    font-size: 1.7rem;
+}
+
+h3.intro {
+    font-size: 1.5rem;
 }
