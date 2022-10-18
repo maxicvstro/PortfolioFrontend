@@ -144,7 +144,7 @@ h3.intro {
         background-image:repeating-linear-gradient(
         rgba(0,0,0,.5),
         rgba(0,0,0,.6),
-        rgba(0,0,0,.9)
+        rgba(0,0,0,1)
         ), url('../images/image-2.jpg');
     }
 
@@ -188,7 +188,30 @@ h3.intro {
 
 /*-----------Media query-----------*/
 
+.spinner-border{
+    margin: 1rem;
+}
+
+.mas-info{
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: .2rem;
+    margin:0 3rem 1rem 3rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+
+@media (min-width:480px){
+    .mas-info{
+        background-size: 10px 10px;
+    }
+}
+
 p {
+    font-weight: bold;
+    font-size: 1.05rem;
     color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
